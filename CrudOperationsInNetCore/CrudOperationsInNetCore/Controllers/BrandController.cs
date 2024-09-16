@@ -50,7 +50,6 @@ namespace CrudOperationsInNetCore.Controllers
 
             return CreatedAtAction(nameof(GetBrand), new { id = brand.ID }, brand);
         }
-        //////update operation
         [HttpPut]
         public async Task<IActionResult> PutBrand(int id, Brand brand)
         {
