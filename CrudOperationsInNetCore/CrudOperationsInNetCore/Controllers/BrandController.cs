@@ -24,11 +24,7 @@ namespace CrudOperationsInNetCore.Controllers
             return await _dbContext.Brands.ToListAsync();
 
         }
-        /// <summary>
-        /// /getperticular id specified values
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+
         [HttpGet ("{id}")]
         public async Task<ActionResult<Brand>> GetBrand(int id)
         {
