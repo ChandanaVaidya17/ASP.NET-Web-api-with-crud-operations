@@ -45,11 +45,7 @@ namespace CrudOperationsInNetCore.Controllers
             return brand;
 
         }
-        /// <summary>
-        /// /to insert the values to the sql seerver at localhost
-        /// </summary>
-        /// <param name="brand"></param>
-        /// <returns></returns>
+
         [HttpPost]
         public async Task<ActionResult<Brand>> PostBrand(Brand brand)
         {
